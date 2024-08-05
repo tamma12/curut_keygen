@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curut Key Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Curut Key Generator</h1>
+        <label for="keyCountSelect" id="keyCountLabel">Number of keys:</label>
+        <input type="number" id="keyCountSelect" min="1" value="1">
+        <button id="startBtn" class="button">Generate keys</button>
+        <div id="progressContainer" class="progress-container hidden">
+            <div id="progressBar" class="progress-bar"></div>
+            <span id="progressText" class="progress-text">0%</span>
+        </div>
+        <div id="keyContainer" class="key-container hidden">
+            <h2 id="generatedKeysTitle">Generated keys:</h2>
+            <div id="keysList" class="keys-list"></div>
+            <button id="copyAllBtn" class="button hidden">Copy all keys</button>
+            <button id="generateMoreBtn" class="button hidden">Generate more</button>
+            <div id="copyStatus" class="copy-status hidden">Copied</div>
+        </div>
+        <h3>Made With curut keygen️</h3>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
